@@ -1,0 +1,28 @@
+.header {
+    width: 100%;
+    height: 80px;
+    background: #33333a;
+    padding: 10px;
+    border-width: 3px;
+    border-style: solid;
+    border-image: linear-gradient(90deg, green, transparent) 0 1 100% 0;
+    &__sidebar img {
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+    }
+    &__logo img {
+        width: 200px;
+        height: 42px;
+    }
+
+    &__cart {
+        & img {
+            width: 50px;
+            height: 50px;
+        }
+    }
+}
+body {
+    overflow-x: hidden;
+}
