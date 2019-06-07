@@ -15,16 +15,16 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>Anything 4u</title>
         <link rel="stylesheet" href="./assets/styles/index.css" />
-        <link
+        <!-- <link
             rel="stylesheet"
             href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"
-        />
+        /> -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     </head>
     <body>
         <header class="header fixed-top">
-            <div class="container-fluid">
+            <div class="container">
                 <ul
                     class="header__nav d-flex justify-content-between align-items-center row"
                 >
@@ -65,13 +65,12 @@
                         >
                             <span
                                 class="dropdown-item dropdown-item--amount d-flex justify-content-center align-items-center"
-                                href="#"
                                 >10000$</span
                             >
-                            <span
+                            <a
                                 class="dropdown-item dropdown-item--account d-flex justify-content-center align-items-center"
-                                href="./account"
-                                >Account</span
+                                href="./account.html"
+                                >Account</a
                             >
                             <span
                                 class="dropdown-item dropdown-item--logout d-flex justify-content-center align-items-center"
@@ -129,12 +128,31 @@
         </header>
 
         <div class="container" style="margin-top: 180px;">
-            <ul class="nav nav-tabs">
-                <li class="active">
-                    <a data-toggle="tab" href="#home">Deposit</a>
+            <ul class="nav nav-tabs row">
+                <li class="active col-md-4 d-flex justify-content-center">
+                    <a
+                        data-toggle="tab"
+                        style="padding:15px; font-size: 16px; "
+                        href="#home"
+                        >Deposit</a
+                    >
                 </li>
-                <li><a data-toggle="tab" href="#menu1">Shopping History</a></li>
-                <li><a data-toggle="tab" href="#menu2">Personal Info</a></li>
+                <li class="col-md-4 d-flex justify-content-center">
+                    <a
+                        data-toggle="tab"
+                        style="padding:15px; font-size: 16px; "
+                        href="#menu1"
+                        >Shopping History</a
+                    >
+                </li>
+                <li class="col-md-4 d-flex justify-content-center">
+                    <a
+                        data-toggle="tab"
+                        style="padding:15px; font-size: 16px; "
+                        href="#menu2"
+                        >Personal Info</a
+                    >
+                </li>
             </ul>
 
             <div
@@ -149,55 +167,82 @@
                         class="col"
                         type="text"
                         placeholder="Enter deposit amount"
+                        style="font-size: 16px;"
                     />
-                    <button class="btn btn-success">Make Deposit</button>
+                    <button class="btn btn-success" style="font-size: 16px;">
+                        Make Deposit
+                    </button>
                 </div>
                 <div
                     id="menu1"
-                    class="tab-pane fade d-flex justify-content-center row"
+                    class="tab-pane fade d-flex flex-column justify-content-center"
                 >
-                    <button class="btn btn-danger col">
+                    <button class="btn btn-danger" style="font-size: 16px;">
                         Clear Shopping History
                     </button>
-                    <li class="list-group-item list-group-item-primary">
+                    <li
+                        class="list-group-item list-group-item-primary"
+                        style="font-size: 16px;"
+                    >
                         item bought by you earlier
                     </li>
-                    <li class="list-group-item list-group-item-secondary">
+                    <li
+                        class="list-group-item list-group-item-secondary"
+                        style="font-size: 16px;"
+                    >
                         item bought by you earlier
                     </li>
-                    <li class="list-group-item list-group-item-primary">
+                    <li
+                        class="list-group-item list-group-item-primary"
+                        style="font-size: 16px;"
+                    >
                         item bought by you earlier
                     </li>
-                    <li class="list-group-item list-group-item-secondary">
+                    <li
+                        class="list-group-item list-group-item-secondary"
+                        style="font-size: 16px;"
+                    >
                         item bought by you earlier
                     </li>
                 </div>
                 <div
                     id="menu2"
-                    class="tab-pane fade d-flex justify-content-around row"
+                    class="tab-pane fade d-flex justify-content-center row"
                 >
-                    <input class="col-md-12" type="text" placeholder="Name" />
+                    <input
+                        class="col-md-12"
+                        type="text"
+                        placeholder="Name"
+                        style="font-size: 16px; border-bottom: 1px solid grey; padding: 5px; margin-bottom: 3px;"
+                    />
                     <input
                         class="col-md-12"
                         type="text"
                         placeholder="Last Name"
+                        style="font-size: 16px; border-bottom: 1px solid grey; padding: 5px; margin-bottom: 3px;"
                     />
                     <input
                         class="col-md-12"
                         type="text"
                         placeholder="Enter New Password"
+                        style="font-size: 16px; border-bottom: 1px solid grey; padding: 5px; margin-bottom: 3px;"
                     />
                     <input
                         class="col-md-12"
                         type="text"
                         placeholder="Reapeat Password"
+                        style="font-size: 16px; border-bottom: 1px solid grey; padding: 5px; margin-bottom: 3px;"
                     />
                     <input
                         class="col-md-12"
                         type="text"
                         placeholder="Enter Current Password To Take Changes"
+                        style="font-size: 16px; border-bottom: 1px solid grey; padding: 5px; margin-bottom: 3px;"
                     />
-                    <button class="btn btn-success col-md-6">
+                    <button
+                        class="btn btn-success col-md-6"
+                        style="font-size: 16px;"
+                    >
                         Save Changes
                     </button>
                 </div>

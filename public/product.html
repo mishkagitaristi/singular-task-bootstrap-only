@@ -6,19 +6,19 @@
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
-        <link
-            rel="stylesheet"
-            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-            crossorigin="anonymous"
-        />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>Anything 4u</title>
+        <link
+        rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous"
+        />
         <link rel="stylesheet" href="./assets/styles/index.css" />
     </head>
     <body>
         <header class="header fixed-top">
-            <div class="container-fluid">
+            <div class="container">
                 <ul
                     class="header__nav d-flex justify-content-between align-items-center row"
                 >
@@ -57,15 +57,15 @@
                             class="dropdown-menu "
                             aria-labelledby="dropdownMenuButton"
                         >
-                            <a
-                                class="dropdown-item dropdown-item--amount d-flex justify-content-center align-items-center"
-                                href="./account.html"
-                                >10000$</a
-                            >
                             <span
+                                class="dropdown-item dropdown-item--amount d-flex justify-content-center align-items-center"
+                                
+                                >10000$</span
+                            >
+                            <a
                                 class="dropdown-item dropdown-item--account d-flex justify-content-center align-items-center"
-                                href="./account"
-                                >Account</span
+                                href="./account.html"
+                                >Account</a
                             >
                             <span
                                 class="dropdown-item dropdown-item--logout d-flex justify-content-center align-items-center"
@@ -123,7 +123,7 @@
         </header>
 
         <section
-            class="container-fluid d-flex justify-content-between row"
+            class="d-flex justify-content-between row"
             style="margin-top: 80px;"
         >
             <div class="d-flex align-items-center col">
@@ -286,9 +286,9 @@
             </ul>
         </section>
 
-        <section class="row container-fluid" style="height: 80px;">
+        <section class="row " style="height: 80px;">
             <input
-                class="col-md-9 d-flex align-items-center bg-light text-dark"
+                class="col-md-9 d-flex align-items-center bg-light text-dark container"
                 placeholder="Your Comment Here"
                 style="font-size: 14px; padding: 20px;"
             />
@@ -298,7 +298,7 @@
         </section>
 
         <section
-            class="row d-flex justify-content-end container-fluid"
+            class="row d-flex justify-content-end"
             style="height: 40px; margin-top: 50px;"
         >
             <input
@@ -316,8 +316,8 @@
         </section>
 
         <footer
-            class="footer container-fluid d-flex justify-content-around align-items-center"
-            style="background-color: #33333a;margin-top: 100px;"
+            class="footer fixe-bottom container-fluid d-flex justify-content-around align-items-center"
+            style="background-color: #33333a;margin-top: 100px; z-index:-10!important;"
         >
             <img src="./assets/images/logo.png" alt="site logo" />
             <div class="footer__aboutus d-flex flex-column">
