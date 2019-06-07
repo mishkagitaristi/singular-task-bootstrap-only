@@ -26,3 +26,22 @@
 body {
     overflow-x: hidden;
 }
+@media (max-width: 768px) {
+    .header {
+        &__sidebar{
+            width: 50px;
+        }
+        &__logo {
+            display: none!important;
+        }
+        &__search{
+            width: 100px;
+        }
+        &__account{
+            width: 60px;
+        }
+        &__cart{
+            width: 50px;
+        }
+    }
+}

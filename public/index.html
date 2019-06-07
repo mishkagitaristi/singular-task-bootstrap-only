@@ -13,7 +13,7 @@
             crossorigin="anonymous"
         />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <title>Anything 4u</title>
+        <title>Anything 4u</title>        
         <link rel="stylesheet" href="./assets/styles/index.css" />
     </head>
     <body>
@@ -24,7 +24,7 @@
                     class="header__nav d-flex justify-content-between align-items-center row"
                 >
                     <li
-                        class="header__sidebar col-md-2 offset1 d-flex justify-content-center"
+                        class="header__sidebar col-md-2 d-flex justify-content-center"
                         onclick="sidebar()"
                     >
                         <img src="./assets/images/hamburger.png" alt="menu" />
@@ -35,7 +35,7 @@
                         href="/"
                         ><img src="./assets/images/logo.png" alt="site logo"
                     /></a>
-                    <div class="md-form mt-0">
+                    <div class="header__search md-form mt-0">
                         <input
                             class="form-control"
                             type="text"
@@ -44,9 +44,9 @@
                         />
                     </div>
 
-                    <div class="dropdown col-md-2 d-flex justify-content-end">
+                    <div class="header__account dropdown col-md-2 d-flex justify-content-end">
                         <button
-                        ./product.html   class="btn btn-secondary dropdown-toggle"
+                        class="btn btn-secondary dropdown-toggle"
                             id="dropdownMenuButton"
                             data-toggle="dropdown"
                             aria-haspopup="true"
